@@ -1,0 +1,43 @@
+$main-font:  'Poppins', sans-serif;;
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-family: $main-font;
+    #another-wrapper{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #headline{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+    #message-icon{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 51% 76%, 0% 75%);
+        width: 8rem;
+        height: 8rem;
+        background: linear-gradient(81deg, #6EC6FF, #8E97FD , #A88BEB);
+        background-size: 200% 200%;
+        animation: moveGradient 5s linear infinite;
+        background-size: 200% 200%;
+    }
+}
+
+
+/* Animation for a moving gradient background effect */
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;  
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%;  
+    }
+}
